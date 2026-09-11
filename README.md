@@ -7,8 +7,6 @@
 
 **Vetrina video per i progetti e le librerie Ital Pascal**
 
-**Vetrina video per i progetti e le librerie Ital Pascal**
-
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-brightgreen?style=for-the-badge)](https://list051.github.io/WinVideoShowcase/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/List051/WinVideoShowcase/blob/main/LICENSE)
 
 
