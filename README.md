@@ -289,7 +289,7 @@ Repository GitHub:
 
 ## 👨‍💻 Autore
 
-**List051**
+**List051**  *ItalPascal*
 
 GitHub:
 
