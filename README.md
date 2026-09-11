@@ -7,9 +7,8 @@
 
 **Vetrina video per i progetti e le librerie Ital Pascal**
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-brightgreen?style=for-the-badge)](https://list051.github.io/WinVideoShowcase/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-brightgreen?style=for-the-badge)](https://list051.github.io/WinVideoShowcase/) [![License](https://img.shields.io/github/license/List051/WinVideoShowcase?style=for-the-badge)](https://github.com/List051/WinVideoShowcase/blob/main/LICENSE)
 
-[![License](https://img.shields.io/github/license/List051/WinVideoShowcase?style=for-the-badge)](https://github.com/List051/WinVideoShowcase/blob/main/LICENSE)
 
 
 **WinVideoShowcase** è una semplice pagina web per presentare e riprodurre una raccolta di video YouTube attraverso un'interfaccia grafica moderna e intuitiva.
