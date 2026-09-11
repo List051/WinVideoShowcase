@@ -3,6 +3,7 @@
   <img src="Logo.png" alt="Ital Pascal Logo" width="180">
 </p>
 
+
 # WinVideoShowcase
 
 **Vetrina video per i progetti e le librerie Ital Pascal**
@@ -305,7 +306,7 @@ Questo progetto è distribuito secondo i termini della licenza indicata nel file
 LICENSE
 ```
 
-Per le condizioni complete consultare il file `LICENSE` presente nel repository.
+>Per le condizioni complete consultare il file `LICENSE` presente nel repository.
 
 ---
 
