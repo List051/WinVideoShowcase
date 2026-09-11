@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CreaFiltroDvg – Video Showcase</title>
+
+    <!-- Splide CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- Il nostro CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>CreaFiltroDvg</h1>
+
+    <p class="subtitle">
+        Video Demo • Versioni • Funzionalità
+    </p>
+
+</header>
+
+
+<main class="video-showcase">
+
+
+    <!-- ==========================================
+         CAROSELLO PRINCIPALE
+         ========================================== -->
+
+    <section id="video-carousel"
+             class="splide"
+             aria-label="Video CreaFiltroDvg">
+
+        <div class="splide__track">
+
+            <ul class="splide__list">
+
+
+                <!-- VIDEO 1 -->
+
+                <li class="splide__slide">
+
+                    <div class="slide-card">
+
+                        <div class="video-preview" data-video-id="0zCklG1H4rA">
+    <img src="https://img.youtube.com/vi/0zCklG1H4rA/hqdefault.jpg" alt="CreaFiltroDvg">
+</div>
+
+                        <div class="info">
+
+                            <div class="title">
+                                Win Spinnet
+                            </div>
+
+                            <div class="desc">
+                                Video dimostrativo di Win Spinnet.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+                <!-- VIDEO 2 -->
+
+                <li class="splide__slide">
+
+                    <div class="slide-card">
+
+                       <div class="video-preview" data-video-id="UboNebA_Irs">
+    <img src="https://img.youtube.com/vi/UboNebA_Irs/hqdefault.jpg" alt="Win Spinnet">
+</div>
+
+                        <div class="info">
+
+                            <div class="title">
+                                WinTest SenzaVincoli
+                            </div>
+
+                            <div class="desc">
+                                Video dimostrativo di WinTest SenzaVincoli.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+                <!-- VIDEO 3 -->
+
+                <li class="splide__slide">
+
+                    <div class="slide-card">
+
+                     <div class="video-preview" data-video-id="tn6D89N6eV4">
+    <img src="https://img.youtube.com/vi/tn6D89N6eV4/hqdefault.jpg" alt="WinTest SenzaVincoli">
+</div>
+
+                        <div class="info">
+
+                            <div class="title">
+                                Win ItalPascal
+                            </div>
+
+                            <div class="desc">
+                                Video dimostrativo di Win ItalPascal.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+                <!-- VIDEO 4 -->
+
+                <li class="splide__slide">
+
+                    <div class="slide-card">
+
+                     <div class="video-preview" data-video-id="3FkO8yAd0Mg">
+    <img src="https://img.youtube.com/vi/3FkO8yAd0Mg/hqdefault.jpg" alt="Win ItalPascal">
+</div>
+
+                        <div class="info">
+
+                            <div class="title">
+                                CreaFiltroDvg
+                            </div>
+
+                            <div class="desc">
+                                Dimostrazione di CreaFiltroDvg.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         MINIATURE
+         ========================================== -->
+
+    <section id="thumbnail-carousel"
+             class="splide thumbnails"
+             aria-label="Miniature video">
+
+        <div class="splide__track">
+
+            <ul class="splide__list">
+
+
+                <li class="splide__slide">
+
+                    <img src="https://img.youtube.com/vi/UboNebA_Irs/mqdefault.jpg"
+                         alt="Win Spinnet">
+
+                    <span>Win Spinnet</span>
+
+                </li>
+
+
+                <li class="splide__slide">
+
+                    <img src="https://img.youtube.com/vi/tn6D89N6eV4/mqdefault.jpg"
+                         alt="WinTest SenzaVincoli">
+
+                    <span>WinTest SenzaVincoli</span>
+
+                </li>
+
+
+                <li class="splide__slide">
+
+                    <img src="https://img.youtube.com/vi/3FkO8yAd0Mg/mqdefault.jpg"
+                         alt="Win ItalPascal">
+
+                    <span>Win ItalPascal</span>
+
+                </li>
+
+
+                <li class="splide__slide">
+
+                    <img src="https://img.youtube.com/vi/0zCklG1H4rA/mqdefault.jpg"
+                         alt="CreaFiltroDvg">
+
+                    <span>CreaFiltroDvg</span>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- ==========================================
+     SOLO SPLIDE
+     ========================================== -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // =====================================================
+    // CAROSELLO PRINCIPALE
+    // =====================================================
+
+    const main = new Splide("#video-carousel", {
+
+        type: "slide",
+        perPage: 1,
+        perMove: 1,
+        gap: "20px",
+
+        arrows: true,
+        pagination: true,
+        rewind: true
+
+    });
+
+
+    // =====================================================
+    // MINIATURE
+    // =====================================================
+
+    const thumbnails = new Splide("#thumbnail-carousel", {
+
+        fixedWidth: 180,
+        fixedHeight: 110,
+
+        gap: 12,
+
+        rewind: true,
+
+        pagination: false,
+        arrows: false,
+
+        isNavigation: true
+
+    });
+
+
+    // Collega miniature e carosello principale
+    main.sync(thumbnails);
+
+
+    // Avvia Splide
+    main.mount();
+
+    thumbnails.mount();
+
+
+    // =====================================================
+    // RIPRODUZIONE VIDEO YOUTUBE
+    // =====================================================
+
+    function playVideo(container) {
+
+        const videoId = container.getAttribute("data-video-id");
+
+        if (!videoId) {
+            console.error("ID YouTube mancante.");
+            return;
+        }
+
+
+        const iframe = document.createElement("iframe");
+
+
+        iframe.src =
+            "https://www.youtube.com/embed/" +
+            videoId +
+            "?autoplay=1&rel=0";
+
+
+        iframe.width = "100%";
+        iframe.height = "100%";
+
+
+        iframe.frameBorder = "0";
+
+
+        iframe.allow =
+            "accelerometer; " +
+            "autoplay; " +
+            "clipboard-write; " +
+            "encrypted-media; " +
+            "gyroscope; " +
+            "picture-in-picture; " +
+            "web-share";
+
+
+        iframe.setAttribute(
+            "allowfullscreen",
+            ""
+        );
+
+
+        iframe.setAttribute(
+            "referrerpolicy",
+            "strict-origin-when-cross-origin"
+        );
+
+
+        // Elimina la miniatura
+        container.innerHTML = "";
+
+
+        // Inserisce il player
+        container.appendChild(iframe);
+
+    }
+
+
+    // =====================================================
+    // CLICK SULLE IMMAGINI
+    // =====================================================
+
+    document
+        .querySelectorAll(".video-preview")
+        .forEach(function (preview) {
+
+            preview.addEventListener("click", function () {
+
+                playVideo(this);
+                this.classList.add("playing");
+
+            });
+
+        });
+
+});
+
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,563 @@
+```css
+/* =========================================================
+   CREA FILTRO DVG - VIDEO SHOWCASE
+   ========================================================= */
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+
+    margin: 0;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #0d0d0d;
+
+    color: #eaeaea;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #1a1a1a,
+        #111
+    );
+
+    border-bottom: 1px solid #222;
+}
+
+
+h1 {
+
+    margin: 0;
+
+    font-size: 38px;
+
+    font-weight: 600;
+}
+
+
+.subtitle {
+
+    margin-top: 8px;
+
+    color: #9f9f9f;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   CONTENITORE PRINCIPALE
+   ========================================================= */
+
+.video-showcase {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 35px 25px 45px;
+}
+
+
+/* =========================================================
+   CAROSELLO PRINCIPALE
+   ========================================================= */
+
+#video-carousel {
+
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TRACK PRINCIPALE
+   ========================================================= */
+
+#video-carousel .splide__track {
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    background: #000;
+}
+
+
+/* =========================================================
+   SLIDE
+   ========================================================= */
+
+#video-carousel .splide__slide {
+
+    background: #1a1a1a;
+}
+
+
+/* =========================================================
+   CARD VIDEO
+   ========================================================= */
+
+.slide-card {
+
+    width: 100%;
+
+    background: #1a1a1a;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   ANTEPRIMA VIDEO
+   ========================================================= */
+
+.video-preview {
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #000;
+
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+
+.video-preview img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+
+.video-preview:hover img {
+
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   ICONE / PLAY
+   ========================================================= */
+
+.video-preview::after {
+
+    content: "▶";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.72);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    padding-left: 5px;
+
+    pointer-events: none;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.video-preview:hover::after {
+
+    transform: translate(-50%, -50%) scale(1.08);
+
+    background: rgba(0, 0, 0, 0.85);
+}
+
+
+/* =========================================================
+   INFORMAZIONI VIDEO
+   ========================================================= */
+
+.info {
+
+    padding: 18px 20px 20px;
+
+    min-height: 105px;
+}
+
+
+.title {
+
+    font-size: 22px;
+
+    color: #4da3ff;
+
+    font-weight: 600;
+}
+
+
+.desc {
+
+    margin-top: 8px;
+
+    color: #cfcfcf;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+/* =====================================================
+   VIDEO IN RIPRODUZIONE
+   ===================================================== */
+
+.video-preview.playing::after {
+    content: "Ⅱ";
+    font-size: 28px;
+    padding-left: 0;
+}
+/* =========================================================
+   FRECCE SPLIDE
+   ========================================================= */
+
+#video-carousel .splide__arrow {
+
+    width: 42px;
+
+    height: 42px;
+
+    opacity: 0.85;
+
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+#video-carousel .splide__arrow:hover {
+
+    opacity: 1;
+}
+
+
+#video-carousel .splide__arrow svg {
+
+    fill: white;
+
+    width: 18px;
+
+    height: 18px;
+}
+
+
+/* =========================================================
+   MINIATURE
+   ========================================================= */
+
+.thumbnails {
+
+    margin-top: 25px;
+
+    padding: 5px 0;
+}
+
+
+/* =========================================================
+   TRACK MINIATURE
+   ========================================================= */
+
+.thumbnails .splide__track {
+
+    padding: 5px 0 !important;
+}
+
+
+/* =========================================================
+   SINGOLA MINIATURA
+   ========================================================= */
+
+.thumbnails .splide__slide {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #1a1a1a;
+
+    border: 2px solid transparent;
+
+    cursor: pointer;
+
+    opacity: 0.65;
+
+    transition:
+        opacity 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* =========================================================
+   MINIATURA HOVER
+   ========================================================= */
+
+.thumbnails .splide__slide:hover {
+
+    opacity: 1;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   MINIATURA SELEZIONATA
+   ========================================================= */
+
+.thumbnails .splide__slide.is-active {
+
+    opacity: 1;
+
+    border-color: #4da3ff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   IMMAGINE MINIATURA
+   ========================================================= */
+
+.thumbnails .splide__slide img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   TITOLO SOPRA LA MINIATURA
+   ========================================================= */
+
+.thumbnails .splide__slide span {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    padding: 8px 6px;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.9)
+    );
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   PAGINAZIONE
+   ========================================================= */
+
+.splide__pagination {
+
+    bottom: -22px;
+}
+
+
+.splide__pagination__page {
+
+    background: #777;
+
+    opacity: 0.7;
+}
+
+
+.splide__pagination__page.is-active {
+
+    background: #4da3ff;
+
+    transform: scale(1.2);
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .video-showcase {
+
+        padding-left: 18px;
+
+        padding-right: 18px;
+    }
+
+    h1 {
+
+        font-size: 34px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMARTPHONE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    header {
+
+        padding: 30px 15px;
+    }
+
+
+    h1 {
+
+        font-size: 30px;
+    }
+
+
+    .subtitle {
+
+        font-size: 14px;
+    }
+
+
+    .video-showcase {
+
+        padding: 25px 12px 35px;
+    }
+
+
+    .info {
+
+        padding: 15px;
+    }
+
+
+    .title {
+
+        font-size: 19px;
+    }
+
+
+    .desc {
+
+        font-size: 14px;
+    }
+
+
+    .video-preview::after {
+
+        width: 55px;
+
+        height: 55px;
+
+        font-size: 23px;
+    }
+
+
+    #video-carousel .splide__arrow {
+
+        width: 35px;
+
+        height: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   SMARTPHONE PICCOLO
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .thumbnails .splide__slide span {
+
+        font-size: 11px;
+
+        padding: 6px 4px;
+    }
+
+}
+```
