@@ -12,8 +12,6 @@
 [![License](https://img.shields.io/github/license/List051/WinVideoShowcase?style=for-the-badge)](https://github.com/List051/WinVideoShowcase/blob/main/LICENSE)
 
 
-# WinVideoShowcase
-
 **WinVideoShowcase** è una semplice pagina web per presentare e riprodurre una raccolta di video YouTube attraverso un'interfaccia grafica moderna e intuitiva.
 
 Il progetto utilizza **HTML, CSS, JavaScript e Splide.js** e può essere pubblicato direttamente tramite **GitHub Pages**, senza necessità di un server o di un framework.
