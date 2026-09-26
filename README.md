@@ -3,12 +3,30 @@
   <img src="Logo.png" alt="Ital Pascal Logo" width="180">
 </p>
 
+<p align="center">
+
+  <!-- NuGet -->
+  <a href="https://www.nuget.org/packages/WinItalPascal">
+    <img src="https://img.shields.io/nuget/v/WinItalPascal?style=for-the-badge" alt="NuGet Version">
+  </a>
+  <a href="https://www.nuget.org/packages/WinItalPascal">
+    <img src="https://img.shields.io/nuget/dt/WinItalPascal?style=for-the-badge" alt="NuGet Downloads">
+  </a>
+
+  <!-- GitHub -->
+  <img src="https://img.shields.io/github/stars/List051?style=for-the-badge" alt="Stars">
+  <img src="https://img.shields.io/github/forks/List051/WinItalPascal_Lib?style=for-the-badge" alt="Forks">
+  <img src="https://img.shields.io/github/issues/List051/WinItalPascal_Lib?style=for-the-badge" alt="Issues">
+  <img src="https://img.shields.io/github/last-commit/List051/WinItalPascal_Lib?style=for-the-badge" alt="Last Commit">
+
+  <!-- License -->
+  <a href="https://github.com/List051/WinItalPascal_Lib/blob/main/License.txt">
+    <img src="https://img.shields.io/github/license/List051/WinItalPascal_Lib?style=for-the-badge" alt="License">
+  </a>
+
+</p>
 
 # WinVideoShowcase
-
-**Vetrina video per i progetti e le librerie Ital Pascal**
-
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-brightgreen?style=for-the-badge)](https://list051.github.io/WinVideoShowcase/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/List051/WinVideoShowcase/blob/main/LICENSE)
 
 
 **WinVideoShowcase** è una semplice pagina web per presentare e riprodurre una raccolta di video YouTube attraverso un'interfaccia grafica moderna e intuitiva.
@@ -87,7 +105,8 @@ Ogni modifica effettuata sul branch `main` può avviare automaticamente una nuov
 
 ## ▶️ Video presenti nella demo
 
-Attualmente il progetto contiene quattro video:
+**Vetrina video per i progetti e le librerie Ital Pascal è sempre in crescita**
+Il progetto iniziale contiene quattro video:
 
 | # | Titolo               | YouTube       |
 | - | -------------------- | ------------- |
