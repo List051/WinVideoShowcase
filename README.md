@@ -106,6 +106,7 @@ Ogni modifica effettuata sul branch `main` può avviare automaticamente una nuov
 ## ▶️ Video presenti nella demo
 
 **Vetrina video per i progetti e le librerie Ital Pascal è sempre in crescita**
+
 Il progetto iniziale contiene quattro video:
 
 | # | Titolo               | YouTube       |
